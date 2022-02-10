@@ -10,5 +10,6 @@ public class HelloDB {
         while (rs.next()) {
             System.out.println("Le nombre total d'employés est: "+rs.getInt(1));
         }
+        conn.close();
     }
 }
